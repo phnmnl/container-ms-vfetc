@@ -44,14 +44,14 @@ ms-vfetc is a tool to convert MS vendor export formats to a generic format that 
 
 For direct docker usage:
 
-Clone/download the container (after making sure you have [Docker](https://www.docker.com/products) installed properly). Please note to change the path (share between host/container) using the -v flag accordingly.
+Clone/download the container (after making sure you have [Docker](https://www.docker.com/products) installed properly).
 
 ```bash
 docker build -t vfetc .
 ```
 
 ```bash
-docker run -it --rm -v /home/vfetc/ms-vfetc/data/tmp:/out --name vfetc-running vfetc files=data/vendor/agilent/example_batch1.txt,data/vendor/agilent/example_batch2.txt outputfile=/out/agilent.txt 
+docker run -it --rm -v $PWD/ms-vfetc/data/tmp:/out --name vfetc-running vfetc files=data/vendor/agilent/example_batch1.txt,data/vendor/agilent/example_batch2.txt outputfile=/out/agilent.txt 
 ```
 
 ## Publications
