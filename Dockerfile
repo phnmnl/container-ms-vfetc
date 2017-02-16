@@ -4,7 +4,7 @@ MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 ENV TOOL_NAME="ms-vfetc"
 ENV TOOL_VERSION=0.3
-ENV CONTAINER_VERSION=1.1
+ENV CONTAINER_VERSION=1.2
 
 LABEL software="${TOOL_NAME}"
 LABEL software.version="${TOOL_VERSION}"
@@ -18,11 +18,11 @@ RUN apt-get update && apt-get install -y git && \
     git checkout tags/v${TOOL_VERSION} && \
     chmod +x /files/ms-vfetc/src/vfetc.php && \
     chmod +x /usr/local/bin/runTest1.sh && \
+    ln -s /files/${TOOL_NAME}/src/vfetc.php /usr/local/bin/vfetc && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV PATH=$PATH:/files/ms-vfetc/src/:/files/ms-vfetc/src/lib/
 
-WORKDIR /files/${TOOL_NAME}
-ENTRYPOINT ["php", "-f", "src/vfetc.php"]
+ENTRYPOINT ["vfetc"]
