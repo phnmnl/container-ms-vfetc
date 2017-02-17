@@ -3,8 +3,8 @@ FROM php:7.0
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 ENV TOOL_NAME="ms-vfetc"
-ENV TOOL_VERSION=0.3
-ENV CONTAINER_VERSION=1.2
+ENV TOOL_VERSION=0.4
+ENV CONTAINER_VERSION=1.3
 
 LABEL software="${TOOL_NAME}"
 LABEL software.version="${TOOL_VERSION}"
