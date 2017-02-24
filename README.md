@@ -1,5 +1,5 @@
 # container-ms-vfetc
-Version: 1.0.0
+Version: 1.1
 
 ## Short Description
 
