@@ -23,7 +23,7 @@ ms-vfetc is a tool to convert MS vendor export formats to a generic format that 
 
 ## Instrument Data Types
 
-MS (Mass Spectrometry)
+- MS (Mass Spectrometry)
 
 ## Tool Authors
 
