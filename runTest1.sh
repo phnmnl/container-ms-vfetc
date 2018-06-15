@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # run example datasets
-vfetc files=/files/ms-vfetc/data/vendor/sciex/example_batch1.txt outputfile=/tmp/sciex.txt
-vfetc files=/files/ms-vfetc/data/vendor/agilent/example_batch1.txt,/files/ms-vfetc/data/vendor/agilent/example_batch2.txt outputfile=/tmp/agilent.txt
-vfetc files=/files/ms-vfetc/data/vendor/shimadzu/example_batch1.txt,/files/ms-vfetc/data/vendor/shimadzu/example_batch2.txt,/files/ms-vfetc/data/vendor/shimadzu/example_batch3.txt outputfile=/tmp/shimadzu.txt
-vfetc files=/files/ms-vfetc/data/vendor/waters/example_batch1.txt,/files/ms-vfetc/data/vendor/waters/example_batch2.txt outputfile=/tmp/waters.txt
+php /files/ms-vfetc/src/vfetc.php files=/files/ms-vfetc/data/vendor/sciex/example_batch1.txt outputfile=/tmp/sciex.txt
+php /files/ms-vfetc/src/vfetc.php files=/files/ms-vfetc/data/vendor/agilent/example_batch1.txt,/files/ms-vfetc/data/vendor/agilent/example_batch2.txt outputfile=/tmp/agilent.txt
+php /files/ms-vfetc/src/vfetc.php files=/files/ms-vfetc/data/vendor/shimadzu/example_batch1.txt,/files/ms-vfetc/data/vendor/shimadzu/example_batch2.txt,/files/ms-vfetc/data/vendor/shimadzu/example_batch3.txt outputfile=/tmp/shimadzu.txt
+php /files/ms-vfetc/src/vfetc.php files=/files/ms-vfetc/data/vendor/waters/example_batch1.txt,/files/ms-vfetc/data/vendor/waters/example_batch2.txt outputfile=/tmp/waters.txt
 
 # compare output
 if ! cmp -s "/files/ms-vfetc/data/tmp/agilent.txt" "/tmp/agilent.txt"; then
