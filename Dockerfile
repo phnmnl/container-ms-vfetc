@@ -3,14 +3,14 @@ FROM php:7-alpine
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 ENV TOOL_NAME="ms-vfetc" \
-    TOOL_VERSION=0.5 \
-    CONTAINER_VERSION=1.4 \
+    TOOL_VERSION=1.0 \
+    CONTAINER_VERSION=1.5 \
     TOOL_DOWNLOAD_URL="https://github.com/leidenuniv-lacdr-abs/ms-vfetc/archive/v0.5.tar.gz" \
     TOOL_TAR_GZ="ms-vfetc.tar.gz"
 
-LABEL software="${TOOL_NAME}"
-LABEL software.version="${TOOL_VERSION}"
-LABEL version="${CONTAINER_VERSION}"
+LABEL software="ms-vfetc"
+LABEL software.version=1.0
+LABEL version=1.5
 
 ADD runTest1.sh /files/${TOOL_NAME}/runTest1.sh
 
