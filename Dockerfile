@@ -22,7 +22,7 @@ RUN apk update && \
     tar -xvzf $TOOL_TAR_GZ --strip-components 1 && \
     rm -rf *.gz && \
     rm -rf /var/cache/apk/* && \
-    mv runTest1.sh /usr/local/bin/runTest1.sh
+    mv runTest1.sh /usr/local/bin/runTest1.sh && \
     chmod +x /usr/local/bin/runTest1.sh
 
 ENTRYPOINT ["php", "/files/ms-vfetc/src/vfetc.php"]
