@@ -15,7 +15,7 @@ LABEL version=1.5
 
 ADD runTest1.sh /files/${TOOL_NAME}/runTest1.sh
 
-# install and prepare ms-vfetc, when done run the tests
+# install and prepare ms-vfetc, when done run the test(s)
 RUN apk update && \
     apk --no-cache add curl bash && \
     apk add --update --no-cache libintl icu icu-dev libxml2-dev && \
