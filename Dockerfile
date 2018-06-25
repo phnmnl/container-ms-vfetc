@@ -8,7 +8,7 @@ ENV TOOL_NAME="ms-vfetc" \
 
 LABEL software="ms-vfetc"
 LABEL software.version=0.6
-LABEL version=0.6
+LABEL version=1.1
 
 ADD runTest1.sh /files/${TOOL_NAME}/runTest1.sh
 
