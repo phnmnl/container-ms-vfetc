@@ -3,15 +3,12 @@ FROM php:7-alpine
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 ENV TOOL_NAME="ms-vfetc" \
-    TOOL_VERSION=1.0 \
-    CONTAINER_VERSION=1.5 \
-    # TOOL_DOWNLOAD_URL="https://github.com/leidenuniv-lacdr-abs/ms-vfetc/archive/v0.5.tar.gz" \
-    TOOL_DOWNLOAD_URL="https://github.com/leidenuniv-lacdr-abs/ms-vfetc/archive/master.tar.gz" \
+    TOOL_DOWNLOAD_URL="https://github.com/leidenuniv-lacdr-abs/ms-vfetc/archive/v0.6.tar.gz" \
     TOOL_TAR_GZ="ms-vfetc.tar.gz"
 
 LABEL software="ms-vfetc"
-LABEL software.version=1.0
-LABEL version=1.5
+LABEL software.version=0.6
+LABEL version=0.6
 
 ADD runTest1.sh /files/${TOOL_NAME}/runTest1.sh
 
